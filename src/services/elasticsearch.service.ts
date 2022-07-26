@@ -2,7 +2,6 @@
 import { ElasticClient } from "../config/elasticsearch.config"
 import { IRDocument, IRCreateDocument, IRSearchDocument } from "../interfaces"
 
-
 /* Create resource service */
 export const Create = async (data: IRCreateDocument) => {
     try {

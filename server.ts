@@ -25,6 +25,3 @@ else {
         console.log(`[server]: Server is running at http://localhost:${port}`)
     })
 }
-
-// https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/typescript.html
-// https://developer.okta.com/blog/2022/04/27/ultimate-guide-elasticsearch-nodejs
