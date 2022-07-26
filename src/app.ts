@@ -7,6 +7,7 @@ import nocache from "nocache"
 import bodyParser from "body-parser"
 import compression from "compression"
 dotenv.config()
+import { router } from "./routes"
 import { errorHandeller } from "./middlewares/error-handeller.middleware"
 
 export const app: Express = express()
@@ -23,8 +24,8 @@ app.get("/", (req: Request, res: Response, next: NextFunction) => {
     res.send("Wow!😯 are you here 🙃🙃 application running!!! 😜😜😜")
 })
 
-/* Integrate API routes */
-// app.use("/api/v1", router)
+/* Register API routes */
+app.use("/api/v1", router)
 
 /* Register error handeller */
 app.use(errorHandeller)
